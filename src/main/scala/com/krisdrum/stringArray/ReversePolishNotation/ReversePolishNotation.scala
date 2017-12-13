@@ -1,4 +1,4 @@
-package com.krisdrum.stringArray
+package com.krisdrum.stringArray.ReversePolishNotation
 
 class ReversePolishNotation(rpn: List[String]) {
   def calculate(argList: List[String] = rpn, stack: List[String] = List.empty): Long = {

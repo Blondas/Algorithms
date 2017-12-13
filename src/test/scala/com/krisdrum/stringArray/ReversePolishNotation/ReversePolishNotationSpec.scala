@@ -1,4 +1,4 @@
-package com.krisdrum.stringArray
+package com.krisdrum.stringArray.ReversePolishNotation
 
 import org.scalatest.{FlatSpec, Matchers}
 
