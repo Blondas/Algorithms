@@ -5,7 +5,6 @@ object ShortestWordDistance {
     var w1_idx: Int = -1
     var w2_idx: Int = -1
     var min: Int = Int.MaxValue
-//    val wordsEqual: Boolean = word1 == word2
 
     words.zipWithIndex.foreach{ case (word, index) =>
       if (word == word1) {
@@ -16,7 +15,6 @@ object ShortestWordDistance {
         if (w1_idx != -1) min = Math.min((w1_idx - w2_idx).abs, min)
       }
     }
-
     min
   }
 }
