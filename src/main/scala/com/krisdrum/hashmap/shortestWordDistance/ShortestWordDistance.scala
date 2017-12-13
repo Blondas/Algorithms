@@ -6,7 +6,7 @@ object ShortestWordDistance {
     var w2_idx: Int = -1
     var min: Int = Int.MaxValue
 
-    words.zipWithIndex.foreach{ case (word, index) =>
+    words.view.zipWithIndex.foreach{ case (word, index) =>
       if (word == word1) {
         w1_idx = index
         if (w2_idx != -1) min = Math.min((w1_idx - w2_idx).abs, min)
